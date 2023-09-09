@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  scroll-behavior: smooth;
+  font-family: "cairo";
+}
+.image-fade {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out; /* Adjust the duration and timing function as needed */
+  }
+
+.hash-span {
+    margin-top: -100px;
+    padding-bottom: 100px;
+    display: block;
+  }  
+
+
+  li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.5s ease;
+  }
+  
+  li:hover::before {
+    width: 100%;
+  }  
+  a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.5s ease;
+  }
+  
+  a:hover::before {
+    width: 100%;
+  }  
+
+
+  
+
+
+
+  .swiper-pagination-fraction {
+    font-size: 30px; /* Adjust the desired font size */
+    font-weight: bold; /* You can change this as needed */
+    color: #333; /* Change the color to your preferred style */
+  }
